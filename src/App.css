@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.body{
+  background-color: #FFFFFF;
+  font-family: 'Open Sans';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+}
+.content__card{
+  width: 22.10vw;
+  height: 36.30vw;
+  background-color: #FFFFFF;
+  margin-right: 0.87vw;
+  flex-shrink:0;
+  flex-grow: 0;
+  padding: 0.51vw 0.58vw 0.58vw 0.51vw;
+  border-radius: 0.7vw;
+  border-color: grey;
+  border-width: 2px;
+}
+.content__imgProduct{
+  background-image: url(imgProduct.png);
+  background-size: cover; 
+  width: 22.46vw;
+  height: 29.49vw;
+  border-radius: 0.7vw;
+}
+.content__info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.87vw;
+}
+.content__price{
+  color: blue;
+}
+.content__price-title{
+  color: black;
+}
+.content__titleProduct{
   color: white;
+  width: 15vw;
+  margin-left: 2vw;
+  padding-top: 24vw;
+  font-size: 1.30vw;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content__label{
+color:#808080;
 }
