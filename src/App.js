@@ -6,7 +6,7 @@ import React, {useState, useEffect} from "react";
   
 
   
-function App(withdrawRemainder) {
+function App() {
   let available=0;
   const [dataapi, setData] = useState([]); 
    
@@ -26,11 +26,11 @@ function App(withdrawRemainder) {
     .then(res => {
       setData(res.data.data.products);
      })
-    })
+    },[])
   
     function withdrawRemainder(){
       console.log(123)
-           return setData(dataapi.filter(item => item.quantity_available >1))
+           return setData(dataapi.filter(item => item.quantity_available >0))
            }
   
     return (
